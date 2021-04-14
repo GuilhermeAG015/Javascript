@@ -17,8 +17,10 @@ const ToDoList = () => {
 
     function deleta(indice){
         console.log(indice)
-
-        setToDo(current => current.filter((toDo, i) => i !== indice))
+        toDo.splice(indice, 1)
+        // console.log(teste)
+        setToDo([...toDo])
+        // setToDo(current => current.filter((toDo, i) => i !== indice))
     }
 
     return (
@@ -54,7 +56,7 @@ const ToDoList = () => {
                     <tbody>
                         {toDo.map((todo, index) => {
                             return(
-                                <LinhaTable>
+                                <LinhaTable key={index}>
                                     <td>{todo.name}</td>
                                     <td><Botao type='button' onClick={() => deleta(index)}>excluir</Botao></td>
                                 </LinhaTable>

@@ -3,10 +3,13 @@ import styled from 'styled-components'
 const ContainerApp = styled.div `
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    height: 650px;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f6f6f6f6;
 `
 
 export default ContainerApp

@@ -1,14 +1,13 @@
+import React from 'react';
 import ContainerApp from './App.styles';
-import Data from './components/Date';
-import ExercicioHooks from './components/HooksUseState';
-import ToDoList from './components/ToDoList';
+import Body from './components/Pokemons/Body';
+import HeaderPoke from './components/Pokemons/Header';
 
 function App() {
   return (
     <ContainerApp>
-      <ExercicioHooks />
-      <Data />
-      <ToDoList />
+      <HeaderPoke />
+      <Body />
     </ContainerApp>
   );
 }
